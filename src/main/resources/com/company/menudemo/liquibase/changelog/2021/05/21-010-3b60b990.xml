@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+    <changeSet id="1" author="menudemo">
+        <createTable tableName="ANDROID">
+            <column name="ID" type="UUID">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_ANDROID"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="2" author="menudemo">
+        <createTable tableName="APPLE">
+            <column name="ID" type="UUID">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_APPLE"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="3" author="menudemo">
+        <createTable tableName="ASUS">
+            <column name="ID" type="UUID">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_ASUS"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="4" author="menudemo">
+        <createTable tableName="COMPUTERS">
+            <column name="ID" type="UUID">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_COMPUTERS"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="5" author="menudemo">
+        <createTable tableName="IOS">
+            <column name="ID" type="UUID">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_IOS"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="6" author="menudemo">
+        <createTable tableName="MACBOOK_AIR">
+            <column name="ID" type="UUID">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_MACBOOK_AIR"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="7" author="menudemo">
+        <createTable tableName="MACBOOK_PRO">
+            <column name="ID" type="UUID">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_MACBOOK_PRO"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="8" author="menudemo">
+        <createTable tableName="MSI">
+            <column name="ID" type="UUID">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_MSI"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="9" author="menudemo">
+        <createTable tableName="OTHER_ELECTRONICS">
+            <column name="ID" type="UUID">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_OTHER_ELECTRONICS"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="10" author="menudemo">
+        <createTable tableName="SAMSUNG">
+            <column name="ID" type="UUID">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_SAMSUNG"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="11" author="menudemo">
+        <createTable tableName="TV">
+            <column name="ID" type="UUID">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_TV"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet id="12" author="menudemo">
+        <createTable tableName="XIAOMI">
+            <column name="ID" type="UUID">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="PK_XIAOMI"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
