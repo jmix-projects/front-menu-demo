@@ -9,6 +9,7 @@ import { MultiTabs } from "@haulmont/jmix-react-ui";
 import { useMainStore, tabs, Router } from "@haulmont/jmix-react-core";
 import CenteredLoader from "./CenteredLoader";
 import { AppMenu } from "./AppMenu";
+import { AppMenuHorizontal } from "./AppMenuHorizontal"
 import "../routing";
 import "./App.css";
 
@@ -39,6 +40,9 @@ const App = observer(() => {
     <Layout className="main-layout">
       <Layout.Header>
         <AppHeader />
+      </Layout.Header>
+      <Layout.Header>
+        <AppMenuHorizontal />
       </Layout.Header>
       <Layout className="layout-container">
         <Layout.Sider
