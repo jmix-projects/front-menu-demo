@@ -7,50 +7,42 @@ import { FormattedMessage } from "react-intl";
 export const AppMenu = () => {
   return (
     <VerticalMenu>
-      <MenuItem onClick={tabs.closeAll}>
-        <HomeOutlined />
+      <MenuItem icon={ <HomeOutlined />} onClick={tabs.closeAll} key={'home'}>
         <FormattedMessage id="router.home" />
       </MenuItem>
 
-      <SubMenuItem title={"Other Electronics"}>
-        <SubMenuItem title={"Smartphones"}>
-          <SubMenuItem title={"IOS"}>
-            <MenuItem screenId={"AppleManagement"}>
-              <BarsOutlined />
+      <SubMenuItem title={"Other Electronics"} key={"otherElectronics"}>
+        <SubMenuItem title={"Smartphones"} key={"smartphones"}>
+          <SubMenuItem title={"IOS"} key={'ios'}>
+            <MenuItem icon={ <BarsOutlined />} screenId={"AppleManagement"} key={'apple'}>
               <FormattedMessage id={"router.AppleManagement"} />
             </MenuItem>
           </SubMenuItem>
-          <SubMenuItem title={"Android"}>
-            <MenuItem screenId={"XiaomiManagement"}>
-              <BarsOutlined />
+          <SubMenuItem title={"Android"} key={'android'}>
+            <MenuItem icon={<BarsOutlined />} screenId={"XiaomiManagement"} key={'xiaomi'}>
               <FormattedMessage id={"router.XiaomiManagement"} />
             </MenuItem>
-            <MenuItem screenId={"SamsungManagement"}>
-              <BarsOutlined />
+            <MenuItem icon={<BarsOutlined />} screenId={"SamsungManagement"} key={'samsung'}>
               <FormattedMessage id={"router.SamsungManagement"} />
             </MenuItem>
           </SubMenuItem>
         </SubMenuItem>
-        <SubMenuItem title={"Notebooks"}>
-          <SubMenuItem title={"Windows"}>
-              <MenuItem screenId={"AsusManagement"}>
-                  <BarsOutlined />
+        <SubMenuItem title={"Notebooks"} key={'notebooks'}>
+          <SubMenuItem title={"Windows"} key={'windows'}>
+              <MenuItem icon={<BarsOutlined />} screenId={"AsusManagement"} key={'asus'}>
                   <FormattedMessage id={"router.AsusManagement"} />
               </MenuItem>
 
-              <MenuItem screenId={"MsiManagement"}>
-                  <BarsOutlined />
+              <MenuItem icon={<BarsOutlined />} screenId={"MsiManagement"} key={'msi'}>
                   <FormattedMessage id={"router.MsiManagement"} />
               </MenuItem>
           </SubMenuItem>
-            <SubMenuItem title={"MacOS"}>
-                <MenuItem screenId={"MacbookAirManagement"}>
-                    <BarsOutlined />
+            <SubMenuItem title={"MacOS"} key={'macos'}>
+                <MenuItem icon={<BarsOutlined />} screenId={"MacbookAirManagement"} key={'air'}>
                     <FormattedMessage id={"router.MacbookAirManagement"} />
                 </MenuItem>
 
-                <MenuItem screenId={"MacbookProManagement"}>
-                    <BarsOutlined />
+                <MenuItem icon={<BarsOutlined />} screenId={"MacbookProManagement"} key={'pro'}>
                     <FormattedMessage id={"router.MacbookProManagement"} />
                 </MenuItem>
             </SubMenuItem>
@@ -58,17 +50,15 @@ export const AppMenu = () => {
       </SubMenuItem>
 
 
-      <MenuItem screenId={"TVManagement"}>
-        <BarsOutlined />
+      <MenuItem icon={<BarsOutlined />} screenId={"TVManagement"} key={'tv'}>
         <FormattedMessage id={"router.TVManagement"} />
       </MenuItem>
 
 
 
-      <MenuItem screenId={"ComputersManagement"}>
-        <BarsOutlined />
+      <MenuItem icon={<BarsOutlined />} screenId={"ComputersManagement"} key={'computers'}>
         <FormattedMessage id={"router.ComputersManagement"} />
       </MenuItem>
-        </VerticalMenu>
+    </VerticalMenu>
   );
 };

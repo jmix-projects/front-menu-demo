@@ -7,68 +7,57 @@ import { FormattedMessage } from "react-intl";
 export const AppMenuHorizontal = () => {
     return (
         <HorizontalMenu>
-            <MenuItem onClick={tabs.closeAll}>
-                <HomeOutlined />
-                <FormattedMessage id="router.home" />
-            </MenuItem>
+          <MenuItem icon={ <HomeOutlined />} onClick={tabs.closeAll} key={'hor-home'}>
+            <FormattedMessage id="router.home" />
+          </MenuItem>
 
-            <SubMenuItem title={"Other Electronics"}>
-                <SubMenuItem title={"Smartphones"}>
-                    <SubMenuItem title={"IOS"}>
-                        <MenuItem screenId={"AppleManagement"}>
-                            <BarsOutlined />
-                            <FormattedMessage id={"router.AppleManagement"} />
-                        </MenuItem>
-                    </SubMenuItem>
-                    <SubMenuItem title={"Android"}>
-                        <MenuItem screenId={"XiaomiManagement"}>
-                            <BarsOutlined />
-                            <FormattedMessage id={"router.XiaomiManagement"} />
-                        </MenuItem>
-                        <MenuItem screenId={"SamsungManagement"}>
-                            <BarsOutlined />
-                            <FormattedMessage id={"router.SamsungManagement"} />
-                        </MenuItem>
-                    </SubMenuItem>
-                </SubMenuItem>
-                <SubMenuItem title={"Notebooks"}>
-                    <SubMenuItem title={"Windows"}>
-                        <MenuItem screenId={"AsusManagement"}>
-                            <BarsOutlined />
-                            <FormattedMessage id={"router.AsusManagement"} />
-                        </MenuItem>
-
-                        <MenuItem screenId={"MsiManagement"}>
-                            <BarsOutlined />
-                            <FormattedMessage id={"router.MsiManagement"} />
-                        </MenuItem>
-                    </SubMenuItem>
-                    <SubMenuItem title={"MacOS"}>
-                        <MenuItem screenId={"MacbookAirManagement"}>
-                            <BarsOutlined />
-                            <FormattedMessage id={"router.MacbookAirManagement"} />
-                        </MenuItem>
-
-                        <MenuItem screenId={"MacbookProManagement"}>
-                            <BarsOutlined />
-                            <FormattedMessage id={"router.MacbookProManagement"} />
-                        </MenuItem>
-                    </SubMenuItem>
-                </SubMenuItem>
+          <SubMenuItem title={"Other Electronics"} key={"hor-otherElectronics"}>
+            <SubMenuItem title={"Smartphones"} key={"hor-smartphones"}>
+              <SubMenuItem title={"IOS"} key={'hor-ios'}>
+                <MenuItem icon={ <BarsOutlined />} screenId={"AppleManagement"} key={'hor-apple'}>
+                  <FormattedMessage id={"router.AppleManagement"} />
+                </MenuItem>
+              </SubMenuItem>
+              <SubMenuItem title={"Android"} key={'hor-android'}>
+                <MenuItem icon={<BarsOutlined />} screenId={"XiaomiManagement"} key={'hor-xiaomi'}>
+                  <FormattedMessage id={"router.XiaomiManagement"} />
+                </MenuItem>
+                <MenuItem icon={<BarsOutlined />} screenId={"SamsungManagement"} key={'hor-samsung'}>
+                  <FormattedMessage id={"router.SamsungManagement"} />
+                </MenuItem>
+              </SubMenuItem>
             </SubMenuItem>
+            <SubMenuItem title={"Notebooks"} key={'hor-notebooks'}>
+              <SubMenuItem title={"Windows"} key={'hor-windows'}>
+                <MenuItem icon={<BarsOutlined />} screenId={"AsusManagement"} key={'hor-asus'}>
+                  <FormattedMessage id={"router.AsusManagement"} />
+                </MenuItem>
+
+                <MenuItem icon={<BarsOutlined />} screenId={"MsiManagement"} key={'hor-msi'}>
+                  <FormattedMessage id={"router.MsiManagement"} />
+                </MenuItem>
+              </SubMenuItem>
+              <SubMenuItem title={"MacOS"} key={'hor-macos'}>
+                <MenuItem icon={<BarsOutlined />} screenId={"MacbookAirManagement"} key={'hor-air'}>
+                  <FormattedMessage id={"router.MacbookAirManagement"} />
+                </MenuItem>
+
+                <MenuItem icon={<BarsOutlined />} screenId={"MacbookProManagement"} key={'hor-pro'}>
+                  <FormattedMessage id={"router.MacbookProManagement"} />
+                </MenuItem>
+              </SubMenuItem>
+            </SubMenuItem>
+          </SubMenuItem>
+
+          <MenuItem icon={<BarsOutlined />} screenId={"TVManagement"} key={'tv'}>
+            <FormattedMessage id={"router.TVManagement"} />
+          </MenuItem>
 
 
-            <MenuItem screenId={"TVManagement"}>
-                <BarsOutlined />
-                <FormattedMessage id={"router.TVManagement"} />
-            </MenuItem>
 
-
-
-            <MenuItem screenId={"ComputersManagement"}>
-                <BarsOutlined />
-                <FormattedMessage id={"router.ComputersManagement"} />
-            </MenuItem>
+          <MenuItem icon={<BarsOutlined />} screenId={"ComputersManagement"} key={'computers'}>
+            <FormattedMessage id={"router.ComputersManagement"} />
+          </MenuItem>
         </HorizontalMenu>
     );
 };
