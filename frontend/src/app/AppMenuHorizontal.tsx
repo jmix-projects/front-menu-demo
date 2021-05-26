@@ -1,8 +1,8 @@
 import React from "react";
-import { HorizontalMenu, MenuItem, SubMenuItem } from "@haulmont/jmix-react-ui";
-import { BarsOutlined, HomeOutlined } from "@ant-design/icons";
-import { tabs } from "@haulmont/jmix-react-core";
-import { FormattedMessage } from "react-intl";
+import {HorizontalMenu, MenuItem, SubMenuItem} from "@haulmont/jmix-react-ui";
+import {BarsOutlined, HomeOutlined} from "@ant-design/icons";
+import {tabs} from "@haulmont/jmix-react-core";
+import {FormattedMessage} from "react-intl";
 
 export const AppMenuHorizontal = () => {
     return (
@@ -49,15 +49,13 @@ export const AppMenuHorizontal = () => {
             </SubMenuItem>
           </SubMenuItem>
 
-          <MenuItem icon={<BarsOutlined />} screenId={"TVManagement"} key={'tv'}>
+          <MenuItem icon={<BarsOutlined />} screenId={"TVManagement"} key={'hor-tv'}>
             <FormattedMessage id={"router.TVManagement"} />
           </MenuItem>
 
-
-
-          <MenuItem icon={<BarsOutlined />} screenId={"ComputersManagement"} key={'computers'}>
+          <MenuItem icon={<BarsOutlined />} screenId={"ComputersManagement"} key={'hor-computers'}>
             <FormattedMessage id={"router.ComputersManagement"} />
           </MenuItem>
         </HorizontalMenu>
-    );
+  );
 };
