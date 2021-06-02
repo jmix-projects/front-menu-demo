@@ -16,53 +16,53 @@ export const AppMenu = () => {
       <SubMenuItem caption={"Other Electronics"} key={"otherElectronics"}>
         <SubMenuItem caption={"Smartphones"} key={"smartphones"}>
           <SubMenuItem caption={"IOS"} key={'ios'}>
-            <MenuItem caption={<FormattedMessage id={"router.AppleManagement"} />}
+            <MenuItem caption={<FormattedMessage id={"router.Apple"} />}
                       icon={ <BarsOutlined />}
-                      screenId={"AppleManagement"}
+                      screenId={"Apple"}
                       key={'apple'}/>
           </SubMenuItem>
           <SubMenuItem caption={"Android"} key={'android'}>
-            <MenuItem caption={<FormattedMessage id={"router.XiaomiManagement"} />}
+            <MenuItem caption={<FormattedMessage id={"router.Xiaomi"} />}
                       icon={<BarsOutlined />}
-                      screenId={"XiaomiManagement"} key={'xiaomi'}/>
-            <MenuItem caption={<FormattedMessage id={"router.SamsungManagement"} />}
+                      screenId={"Xiaomi"} key={'xiaomi'}/>
+            <MenuItem caption={<FormattedMessage id={"router.Samsung"} />}
                       icon={<BarsOutlined />}
-                      screenId={"SamsungManagement"} key={'samsung'}/>
+                      screenId={"Samsung"} key={'samsung'}/>
           </SubMenuItem>
         </SubMenuItem>
         <SubMenuItem caption={"Notebooks"} key={'notebooks'}>
           <SubMenuItem caption={"Windows"} key={'windows'}>
-              <MenuItem caption={<FormattedMessage id={"router.AsusManagement"} />}
-                        icon={<BarsOutlined />}
-                        screenId={"AsusManagement"}
-                        key={'asus'}/>
+            <MenuItem caption={<FormattedMessage id={"router.Asus"} />}
+                      icon={<BarsOutlined />}
+                      screenId={"Asus"}
+                      key={'asus'}/>
 
-              <MenuItem caption={<FormattedMessage id={"router.MsiManagement"} />}
-                        icon={<BarsOutlined />}
-                        screenId={"MsiManagement"}
-                        key={'msi'}/>
+            <MenuItem caption={<FormattedMessage id={"router.Msi"} />}
+                      icon={<BarsOutlined />}
+                      screenId={"Msi"}
+                      key={'msi'}/>
           </SubMenuItem>
-            <SubMenuItem caption={"MacOS"} key={'macos'}>
-                <MenuItem caption={<FormattedMessage id={"router.MacbookAirManagement"} />}
-                          icon={<BarsOutlined />}
-                          screenId={"MacbookAirManagement"}
-                          key={'air'}/>
-                <MenuItem caption={<FormattedMessage id={"router.MacbookProManagement"} />}
-                          icon={<BarsOutlined />} screenId={"MacbookProManagement"} key={'pro'}/>
+          <SubMenuItem caption={"MacOS"} key={'macos'}>
+            <MenuItem caption={<FormattedMessage id={"router.MacbookAir"} />}
+                      icon={<BarsOutlined />}
+                      screenId={"MacbookAir"}
+                      key={'air'}/>
+            <MenuItem caption={<FormattedMessage id={"router.MacbookPro"} />}
+                      icon={<BarsOutlined />} screenId={"MacbookPro"} key={'pro'}/>
 
-            </SubMenuItem>
+          </SubMenuItem>
         </SubMenuItem>
       </SubMenuItem>
 
 
-      <MenuItem caption={<FormattedMessage id={"router.TVManagement"} />}
+      <MenuItem caption={<FormattedMessage id={"router.TV"} />}
                 icon={<BarsOutlined />}
-                screenId={"TVManagement"}
+                screenId={"TV"}
                 key={'tv'}/>
 
-      <MenuItem caption={<FormattedMessage id={"router.ComputersManagement"} />}
+      <MenuItem caption={<FormattedMessage id={"router.Computers"} />}
                 icon={<BarsOutlined />}
-                screenId={"ComputersManagement"}
+                screenId={"Computers"}
                 key={'computers'}/>
     </VerticalMenu>
   );
